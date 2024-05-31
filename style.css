@@ -21,9 +21,7 @@ body {
 /* Content styles */
 .dots {
   padding: 3.236em;
-  border-style: dotted;
-  border-width: 0.1em;
-  border-color: hsla(157, 100%, 20%, 50%);
+  border: 2px dotted hsla(157, 100%, 20%, 50%);
 }
 
 .dots:last-child {
