@@ -1,5 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 html {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 *,
@@ -7,7 +14,8 @@ html {
   color: rgb(0, 77, 47);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -30,13 +38,16 @@ body {
 }
 
 .container {
-  margin: 1em;
+  margin: 0.618em;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1em 1fr;
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   gap: 1em 1em;
   grid-auto-flow: row;
-  grid-template-areas: ". .";
+      grid-template-areas: ". .";
   width: auto;
 }
 
@@ -55,7 +66,7 @@ h3,
 h2 {
   font-size: 1em;
   font-weight: 589;
-  margin-bottom: 0.618em;
+  margin-bottom: 0.404em;
 }
 
 p,
@@ -71,7 +82,6 @@ time {
   margin: 0 0 1.618em 0;
   font-weight: 350;
   color: rgba(0, 102, 63, 0.65);
-  
 }
 
 a {
@@ -93,6 +103,7 @@ a:hover {
 img.location {
   width: 50%;
   height: auto;
+  margin: 0.618em 0;
 }
 
 @media all and (-ms-high-contrast: none) {
