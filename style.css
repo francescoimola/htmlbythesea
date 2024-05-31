@@ -1,0 +1,125 @@
+html {
+  font-size: 16px;
+}
+
+*,
+html {
+  color: rgb(0, 77, 47);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(242, 242, 242);
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.618em;
+}
+
+/* Content styles */
+.dots {
+  padding: 3.236em;
+  border-style: dotted;
+  border-width: 0.1em;
+  border-color: hsla(157, 100%, 20%, 50%);
+}
+
+.dots:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.container {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: ". .";
+  width: auto;
+}
+
+h1 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-weight: 728.1;
+}
+
+h2 {
+  margin-top: 1.618em;
+}
+
+h3,
+h2 {
+  font-size: 1em;
+  font-weight: 589;
+  margin-bottom: 0.618em;
+}
+
+p,
+aside,
+time {
+  font-weight: 450;
+  padding: 0;
+  margin: 0 0 1.618em 0;
+  color: rgba(0, 102, 63, 0.85);
+}
+
+.subtitle {
+  margin: 0 0 1.618em 0;
+  font-weight: 350;
+  color: rgba(0, 102, 63, 0.65);
+  
+}
+
+a {
+  border-bottom: 1px solid rgb(0, 102, 63);
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 0;
+  background: white;
+}
+
+.logo {
+  width: 3.236em;
+  height: auto;
+  margin: 0 0 1em 0;
+}
+
+img.location {
+  width: 50%;
+  height: auto;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .container {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+  .dots {
+    padding: 1em;
+    margin-bottom: 0.809em;
+  }
+
+  .logo {
+    margin-top: 0.618em;
+  }
+  
+  img.location {
+  width: 100%;
+  height: auto;
+}
+}
